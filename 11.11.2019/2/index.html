@@ -10,19 +10,19 @@
 <body>
     <h2>Creating a chart</h2>
     <p class="text">To create a chart, we need to instantiate the <code> Chart </code>  class. To do this, we need to pass in the 2d context of where we want to draw the chart. Here's an example.</p>
-    <p><code>
+    <div class="code-space"><p><code>
         <font color="#1B1B7C">&lt;canvas</font> <font color="#599E9C">id=</font><font color="red">"myChart"</font> <font color="#599E9C">width=</font><font color="red">"400"</font> <font color="#599E9C">height=</font><font color="red">"400"</font><font color="#1B1B7C">&gt;&lt;/canvas&gt;</font>
-    </code></p>  
-    <div class="commentary">// Get the context of the canvas element we want to select</div>     
+    </code></p>  </div>
+    <div class="code-space"><div class="commentary">// Get the context of the canvas element we want to select</div>     
     <div><code> 
         <b>var</b> ctx = <font color="#60A7C7">document</font>.getElementById(<font color="red">"myChart"</font>).getContext(<font color="red">"2d"</font>);<br>
         <b>var</b> myNewChart = <b>new</b> Chart(ctx).PolarArea(data);
-     </code></div>
+     </code></div></div>
      <p class="text">We can also get the context of our canvas with jQuery. To do this, we need to get the DOM node out of the jQuery collection, and call the <code>getContext("2d") </code> method on that.</p>
-     <div class="commentary"> // Get context with jQuery - using jQuery's .get() method.</div>
+     <div class="code-space"><div class="commentary"> // Get context with jQuery - using jQuery's .get() method.</div>
      <code><b>var</b> ctx = $(<font color="red">"#myChart"</font>).get(0).getContext(<font color="red">"2d"</font>);</code>
      <div class="commentary"> // This will get the first returned node in the jQuery collection</div>
-     <code><b>var</b> myNewChart = <b>new</b> Chart(ctx);</code>
+     <code><b>var</b> myNewChart = <b>new</b> Chart(ctx);</code></div>
             
             
       

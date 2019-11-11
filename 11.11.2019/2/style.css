@@ -48,5 +48,8 @@ font-style: italic;
 color: #AEAEAE;
 line-height: 1.2em;
 letter-spacing: 0em;
-
     }
+.code-space{
+  background-color:grey;
+  width:500px;
+}

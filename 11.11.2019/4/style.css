@@ -1,0 +1,18 @@
+.little-triangle{
+    float:left;
+    width:0;
+    height:0;
+border-bottom:47px solid green;
+border-left:40px solid transparent;
+border-right:40px solid transparent;
+margin-top:78px;
+}
+.big-triangle{
+    float:left;
+    width:0;
+    height:0;
+border-top:126px solid green;
+border-left:60px solid transparent;
+border-right:60px solid transparent;
+
+}

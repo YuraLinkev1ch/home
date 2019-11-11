@@ -1,0 +1,85 @@
+
+
+.the-first-line,
+.the-second-line, 
+.the-third-line,
+.the-fourth-line,
+.the-fifth-line,
+.the-sixth-line {
+  width:24px;
+  height:16px;  
+}
+
+.one-1,
+.two-1,
+.three-1{
+    float:left;
+}
+/* Вторая строка 132*/
+
+ .one-2{
+     float:left;
+ }
+ .three-2{
+float:left;
+ }
+.two-2{
+    float:right;
+}
+
+
+/*Третья строка - 213*/
+
+.two-3{
+float:left;
+  
+}
+.one-3{
+float:right;
+  margin-left:-15px;
+  margin-top:4px;
+}
+.three-3{
+float:right;
+  margin-left;
+}
+
+/*Четвертая строка 231*/
+
+.two-4 {
+float:left;
+}
+.three-4{
+float:left;
+  margin-left:9px;
+  margin-top:-18px;
+}
+.one-4{
+float:right;
+  margin-left:4px;
+}
+
+/*Пятая строка 312*/
+
+.one-5{
+  float:right;
+  margin-right:8px;
+}
+.two-5{
+  float:right;
+  margin-right:-16px;
+  
+}
+.three-5{
+  float:left; 
+}
+/* Шестая строка 321*/
+.one-6{
+  float:right;
+}
+.two-6{
+  float:right;
+}
+.three-6{
+  float:left;
+}

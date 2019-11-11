@@ -1,0 +1,52 @@
+@font-face {
+    font-family: 'ProximaNovaCnLt';
+    src: url('fonts/ProximaNovaCond-Light.eot');
+    src: url('fonts/ProximaNovaCond-Light.eot?#iefix') format('embedded-opentype'),
+        url('fonts/ProximaNovaCond-Light.woff2') format('woff2'),
+        url('fonts/ProximaNovaCond-Light.woff') format('woff'),
+        url('fonts/ProximaNovaCond-Light.ttf') format('truetype'),
+        url('fonts/ProximaNovaCond-Light.svg#ProximaNovaCond-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'ProximaNovaLt';
+    src: url('fonts/ProximaNova-Semibold.eot');
+    src: url('fonts/ProximaNova-Semibold.eot?#iefix') format('embedded-opentype'),
+        url('fonts/ProximaNova-Semibold.woff2') format('woff2'),
+        url('fonts/ProximaNova-Semibold.woff') format('woff'),
+        url('fonts/ProximaNova-Semibold.ttf') format('truetype'),
+        url('fonts/ProximaNova-Semibold.svg#ProximaNova-Semibold') format('svg');
+    font-weight: 600;
+    font-style: normal;
+}
+
+    h2{
+        font-family:'ProximaNovaLt';
+font-size: 22px;
+font-weight: 600;
+font-style: normal;
+color: #282B36;
+line-height: 1.81em;
+letter-spacing: 0em;
+    }
+ 
+.text {
+    font-family: 'ProximaNovaCnLt';
+    font-size: 16px;
+font-weight: 500;
+font-style: normal;
+color: #767C8D;
+line-height: 1.25em;
+letter-spacing: 0em;
+    }
+    .commentary{
+        font-family: monospace;
+font-size: 13px;
+font-weight: 400;
+font-style: italic;
+color: #AEAEAE;
+line-height: 1.2em;
+letter-spacing: 0em;
+
+    }

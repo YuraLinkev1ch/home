@@ -1,0 +1,106 @@
+.main{
+    /*background-image:url("image.png");*/
+    width:300px;
+    height:300px;
+    
+}
+.block1{
+    float:left;
+    width:290px;
+    min-height:44px;
+    background-color:#007952;
+    margin-top:16px;
+    margin-left:11px;
+    color:white;
+    font-family:Arial;
+    font-size:35px;
+    text-align:center;
+    border-radius:10px 10px 0% 0%;
+}  
+.block2{
+    float:left;
+    width:290px;
+    min-height:44px;
+    background-color:black;
+    color:white;
+    font-size:30px;
+    margin-left:11px;
+    text-align:center;
+    font-family:Arial;
+    padding-top:5px;
+}
+.left{
+    float:left;
+    border: 15px solid transparent; 
+    border-right: 15px solid #007952;
+}
+.right{
+    float:right;
+    border: 15px solid transparent; 
+    border-left: 15px solid #007952;
+}
+
+.block3 {
+float:left;
+min-height:200px;
+width:280px;
+background-color:#E6E6E6;
+margin-left:11px;
+font-size:24px;
+text-align:center;
+padding-top:20px;
+padding-left:10px;
+
+}
+
+.cell1,
+.cell2,
+.cell3 {
+    float:left;
+    width:37px;
+    height:37px;
+    color:black;
+}
+
+.cell4 {
+    float:left;
+    width:37px;
+    height:32px;
+    color:white;
+    background-color:#007952;
+    text-align:center;
+    
+}
+
+.cell5,
+.cell6,
+.cell7,
+.cell8,
+.cell9,
+.cell10,
+.cell11,
+.cell12,
+.cell13,
+.cell14,
+.cell15,
+.cell16,
+.cell17,
+.cell18,
+.cell19,
+.cell20,
+.cell21,
+.cell22,
+.cell23,
+.cell24,
+.cell25,
+.cell26,
+.cell27,
+.cell28,
+.cell29,
+.cell30,
+.cell31 {
+    float:left;
+    width:37px;
+    height:37px;
+    color:#797A7E;
+}

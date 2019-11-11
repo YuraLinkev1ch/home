@@ -1,0 +1,143 @@
+.main-box{
+    margin: 0 auto;
+    width:1000px;
+    min-height:1000px;
+    margin-top: 25px;
+}
+.box1 {
+    float:left;
+    height:110px  ;
+    width:120px  ;
+    background-color:grey;
+    margin-right:25px;
+}
+
+.box2 {
+    float:left;
+    height:110px  ;
+    width:250px  ;
+    background-color:grey;
+    margin-right:25px;
+}
+.box3 {
+    float:left;
+    height:110px  ;
+    width:510px  ;
+    background-color:grey;
+}
+.line { 
+    float:left;
+    margin:25px 0px;
+    height:1px;
+    width:930px;
+    border:none;
+    background-color: grey;
+    color:grey;
+}
+
+.left-column {
+    float:left;
+    width:180px;
+    min-height:745px;
+    
+}
+
+.box4 {
+    float:left;
+    height:330px ;
+    width:180px ;
+    background-color:grey;
+}
+.box7 {
+    float:left;
+    margin-top:325px;
+    height:130px;
+    width:180px;
+    background-color:grey;
+}
+.right-column {
+    float:left;
+    width:725px;
+    min-height:725px;
+    margin-left:25px;
+    
+}
+
+.box5 {
+    float:right;
+    height:210px  ;
+    width:725px  ;
+    background-color:#DCDCDC;
+    margin-bottom:25px;
+    
+}
+.box6 {
+    float:left;
+    height:150px  ;
+    width:125px  ;
+    background-color:#DCDCDC;
+    margin-right:20px;
+    margin-bottom:25px;
+}
+/*.box6:nth-child(4) {
+margin-left:5px;
+}*/
+
+.box8 {
+    float:left;
+    height:200px  ;
+    width:350px  ;
+    background-color:#DCDCDC;
+    clear:both;
+    margin-right:25px;
+}
+.box9 {
+    float:left;
+    height:200px  ;
+    width:350px  ;
+    background-color:#DCDCDC;
+}
+/*.line2 { 
+    float:left;
+    height:1px;
+    width:930px;
+    
+    background-color: red;
+    color: red;
+
+}*/
+
+.footer{
+    float:left;
+    
+    width:1000px;
+    min-height:200px;  
+}
+
+.box10 {
+    float:left;
+    height:180px;
+    width:300px;
+background-color:grey;
+margin-right:15px;
+}
+.box11 {
+    float:left;
+    height:180px;
+    width:300px  ;
+background-color:grey;
+margin-right:15px;
+}
+.box12 {
+    float:left;
+    height:75px  ;
+    width:300px  ;
+background-color:grey;
+margin-bottom:30px;
+}
+.box13 {
+    float:left;
+    height:75px  ;
+    width:300px  ;
+    background-color:grey;
+}

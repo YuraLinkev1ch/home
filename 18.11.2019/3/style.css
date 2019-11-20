@@ -73,13 +73,47 @@ background-size:750% 200%;
 
  
 
-   /*Figures*/
+   /*Фигуры*/
 
-   .numbers+.odd>[title="castle"]{
+   [title="castle"]{
     background-position-x:41%;
-    background-size:750% 200%;
    }
-   
-   .odd:nth-child(8){
+   [title="horse"]{
+    background-position-x:82%;
+   }
+   [title="king"] {
+    background-position-x:0%;
+   }
+   [title="queen"]{
+    background-position-x:20%;
+   }
+   [title="elefant"]{
+    background-position-x:61%;
+   }
+   .pawn{
+    background-position-x:102%;
+    background-size:750% 200%;
+    background-repeat:no-repeat;
+    background-image:url("images/chess.png");
+   }
+
+
+   .even>div:nth-child(8),
+   .odd>div:nth-child(8),
+   .odd>div:nth-child(9),
+   .even>div:nth-child(9){
     background-position-y:100% ;   
    }
+
+   /*:hover*/
+
+   [title="queen"]:hover,
+   [title="king"]:hover,
+   [title="horse"]:hover,
+   [title="elefant"]:hover,
+   [title="castle"]:hover,
+   .pawn:hover{
+background-color:lightblue !important;
+}
+
+   

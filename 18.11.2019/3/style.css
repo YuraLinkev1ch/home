@@ -1,0 +1,85 @@
+body{
+    margin:0;
+}
+
+.odd>div,
+.even>div,
+.numbers>div {
+width: 10vmin;
+height: 10vmin;
+
+}
+.numbers,
+.numbers+.odd,
+.numbers+.odd+.even,
+.numbers+.odd+.even+.odd,
+.numbers+.odd+.even+.odd+.even,
+.numbers+.odd+.even+.odd+.even+.odd,
+.numbers+.odd+.even+.odd+.even+.odd+.even,
+.numbers+.odd+.even+.odd+.even+.odd+.even+.odd,
+.numbers+.odd+.even+.odd+.even+.odd+.even+.odd+.even{
+    float:left;
+}
+
+.chessboard>div {
+    height: 10vmin;
+}
+
+.odd>.literas+div,
+.odd>.literas+div+div+div {
+    background-color:red;
+}
+  
+.odd>.literas+div,
+.odd>.literas+div+div+div,
+.odd>.literas+div+div+div+div+div,
+.odd>.literas+div+div+div+div+div+div+div {
+    background-color: red;
+}
+
+.numbers>div,
+.literas{
+    line-height:10vmin;
+    text-align:center;
+}
+
+.even>.literas+div+div,
+.even>.literas+div+div+div‎+div {
+        background-color: red;
+    }
+
+    .even>.literas+div+div,
+    .even>.literas+div+div+div+div,
+    .even>.literas+div+div+div+div+div+div,
+    .even>.literas+div+div+div+div+div+div+div+div {
+        background-color: red;
+    }
+
+
+.chessboard>div>div{
+    outline:1px solid red;
+}
+
+.chessboard>.numbers>div,
+.chessboard>.odd>.literas,
+.chessboard>.even>.literas {
+        outline:0px solid transparent;
+}
+
+[title]{
+background-image:url("images/chess.png");
+background-size:750% 200%;
+}
+
+ 
+
+   /*Figures*/
+
+   .numbers+.odd>[title="castle"]{
+    background-position-x:41%;
+    background-size:750% 200%;
+   }
+   
+   .odd:nth-child(8){
+    background-position-y:100% ;   
+   }

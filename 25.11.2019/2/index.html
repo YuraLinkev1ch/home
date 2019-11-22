@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+ * {} /*0*/
+li {} /*1*/
+last-child {} /*1*/
+h1 + p  {} /*2*/
+p + p {} /*2*/
+li::first-line {} /*2*/
+ul li {} /*2*/
+ul ol+li {} /*3*/
+h1 + p::first-line {} /*3*/
+p + p img {} /*3*/
+p + p + p > a::before {} /*5*/
+li:not(.red) {} /*11*/
+a:active {} /*11*/
+button.button_submit {} /*11*/
+ul li.red {} /*12*/
+a[href$=".pdf"]::before {} /*12*/
+ul li:last-child {} /*12*/
+ul li:nth-child(even) {} /*12*/
+div div input[type=text]  {} /*13*/
+form > div > div > div > button.button_submit {} /*15*/
+button[type="submit"].button_submit {} /*21*/
+li.red.level {} /*21*/
+li:not(.red):not(.green) {} /*21*/
+div section>:nth-child(4):not(div) {} /*22*/
+div.cool p.cool a {} /*23*/
+.call-to-action:visited:active {} /*30*/
+#t34 {} /*100*/
+#social li a::before {} /*103*/
+#content .text p {} /*111*/
+#social li a[href*="facebook"]::before {} /*113*/
+body > div.star > a#new {} /*113*/
+#content #wrap * {} /*200*/
+#page header, #page article, #page footer {} /*303*/
+    </style>
+</head>
+<body>
+    
+</body>
+</html>

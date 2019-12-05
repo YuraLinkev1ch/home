@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Фотогалерея</title>
+	<style>
+.slide {
+			outline: 1px solid red;
+  opacity: 0;
+		}
+		input[name=photos] {
+			display: none;
+		}
+		.slide {
+			display: none;
+		}
+
+		#one:checked~#slider>.slide:nth-child(1),
+		#two:checked~#slider>.slide:nth-child(2),
+		#three:checked~#slider>.slide:nth-child(3),
+		#four:checked~#slider>.slide:nth-child(4),
+		#five:checked~#slider>.slide:nth-child(5) {
+opacity:1;
+}
+		.slide {
+			position: relative;
+		}
+		.prevSlide, .nextSlide {
+			position: absolute;
+			top: calc(50% - 1em);
+		}
+		.prevSlide::before {
+			display: block;
+			content: "<";
+		}
+		.nextSlide::before {
+			display: block;
+			content: ">"
+		}
+		.prevSlide {
+			left: 0;
+		}
+		.nextSlide {
+			right: 0;
+		}
+		.slide {
+			text-align: center;
+			min-width: 170px;
+		}
+		.pins>label {
+			border-radius: 50%;
+			background-color: aqua;
+			display: block;
+			width: 10px;
+			height: 10px;
+			float: left;
+			margin: 10px;
+		}
+		.pins {
+			margin-left: calc(50% - 75px);
+		}
+		#one:checked~#slider>.pins>label:nth-child(1),
+		#two:checked~#slider>.pins>label:nth-child(2),
+		#three:checked~#slider>.pins>label:nth-child(3),
+		#four:checked~#slider>.pins>label:nth-child(4),
+		#five:checked~#slider>.pins>label:nth-child(5) {
+			background-color: blue;
+		}
+				.slide {
+			transition: 1s;
+			display: block;
+			position: absolute;
+			opacity: 0;
+			z-index: 0;
+			left: 0;
+			right: 0;
+		}
+
+		#one:checked~#slider>.slide:nth-child(1),
+		#two:checked~#slider>.slide:nth-child(2),
+		#three:checked~#slider>.slide:nth-child(3),
+		#four:checked~#slider>.slide:nth-child(4),
+		#five:checked~#slider>.slide:nth-child(5) {
+			z-index: 1;
+			opacity: 1;
+		}
+		.pins {
+			position: absolute;
+			top: 160px;
+		}
+		#slider {
+			position: relative;
+		}
+	</style>
+</head>
+
+<body>
+	<h1>добавить стили и расставить for и src так, чтобы работала фотогаллерея</h1>
+	<input type="radio" id="one" name="photos" checked>
+	<input type="radio" id="two" name="photos">
+	<input type="radio" id="three" name="photos">
+	<input type="radio" id="four" name="photos">
+	<input type="radio" id="five" name="photos">
+	<div id="slider">
+		<section class="slide">
+			<img src="https://telegraf.com.ua/files/2019/11/Avto.webp_-388x206.jpg" width="150px" height="150px">
+			<label for="five" class="prevSlide"></label>
+			<label for="two" class="nextSlide"></label>
+		</section>
+		<section class="slide">
+			<img src="https://a.d-cd.net/5d89d2es-960.jpg" width="150px" height="150px" >
+			<label for="one" class="prevSlide"></label>
+			<label for="three" class="nextSlide"></label>
+		</section>
+		<section class="slide">
+			<img src="http://i.i.ua/photo/images/pic/9/5/1430959_6094d3c.jpg" width="150px" height="150px">
+			<label for="two" class="prevSlide"></label>
+			<label for="four" class="nextSlide"></label>
+		</section>
+		<section class="slide">
+			<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTj4bwIFmldwR4pEgpbypybc18hVo1OGMOfxTYS3a-qQOjONjtyjQ&s" width="150px" height="150px">
+			<label for="three" class="prevSlide"></label>
+			<label for="five" class="nextSlide"></label>
+		</section>
+		<section class="slide">
+			<img src="https://i.pinimg.com/originals/a9/64/ac/a964aca1d5bef3ae678720ab14eb3948.jpg" width="150px" height="150px">
+			<label for="four" class="prevSlide"></label>
+			<label for="one" class="nextSlide"></label>
+		</section>
+		<div class="pins">
+			<label for="one"></label>
+			<label for="two"></label>
+			<label for="three"></label>
+			<label for="four"></label>
+			<label for="five"></label>
+		</div>
+	</div>
+</body>
+
+</html>

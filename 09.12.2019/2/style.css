@@ -1,0 +1,110 @@
+
+body, ul{
+    margin: 0;
+    font-size:30px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+body>*{
+max-width:480px;
+}
+header{
+    background-color:coral;
+    position:relative;
+    min-height:320px;
+    min-width:480px;      
+}
+header>div{
+    position:absolute;
+    background-color:orange;
+    height:80px;
+    width:460px;
+    top:10px;
+    left:10px;
+}
+header>ul{
+    position:absolute;
+    left:-25px;
+    top:100px;
+    list-style:none;
+}
+header>ul>li>ul{
+    list-style:none;
+}
+
+footer{
+    background-color:lightblue;
+    min-height:120px;
+    min-width:480px;
+    text-align:center;
+    line-height:120px;
+}
+
+main{
+    min-height:400px;
+    min-width:480px;
+}
+aside{
+    position:absolute;
+    min-width:480px;
+    background-color: hotpink;
+}
+aside li,
+aside label{
+    color:blue;
+    text-decoration:underline;
+    cursor:pointer;
+}
+aside ul{
+    list-style:none;
+    padding-inline-start:0;
+}
+aside input{
+    display:none;
+}
+
+#kozha~ul,
+#roga~ul,
+#kopyta~ul{
+      display:none;
+  }
+
+
+#kozha:checked~ul,
+#roga:checked~ul,
+#kopyta:checked~ul{
+      display:block;
+  }
+  aside>ul>li>label:after{
+    content:'\25bc';
+    display:inline;
+    color:blue;
+    position:absolute;
+    right:0;
+    }
+aside label{
+    display:block;
+}
+#roga~ul,
+#kopyta~ul,
+#kozha~ul{
+    min-width:200px;
+    left:250px;
+    
+    position:absolute;
+    top:35px;
+    left:15px;
+}
+aside>ul>li {
+    position:relative;  
+}
+
+/*измененный список*/
+
+#roga:checked~label{
+margin-bottom:70px;
+  }
+#kopyta:checked~label,
+#kozha:checked~label{
+margin-bottom:105px;
+      }
+ 

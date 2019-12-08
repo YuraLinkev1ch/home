@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+	<style>
+		body,
+		ul {
+			margin: 0;
+			padding: 0;
+		}
+
+		body>* {
+			min-width: 200px;
+            
+		}
+
+		header {
+			background-color: red;
+            min-height:100px;
+		}
+
+		header+div {
+			float: left;
+			width: calc(100% / 3);
+			background-color: yellow;
+           
+		}
+        ul{
+           display:inline;  
+           height:100px;
+        }
+        li{
+           list-style-type: none; 
+        }
+        
+		header+div+div {
+			float: left;
+			width: calc(100% / 3);
+			background-color: violet;
+            height:200px;
+		}
+
+		header+div+div+div {
+			float: left;
+			width: calc(100% / 3);
+			background-color: red;
+            height:200px;
+		}
+
+		footer {
+            float:left;
+			background-color: green;
+            height:200px;
+            width:100%;
+		}
+	</style>
+</head>
+
+<body>
+	<header>шапка сайта</header>
+	<div>
+		<ul>
+			<li>пункт 1</li>
+            <li>пункт 2</li>
+            <li>пункт 3</li>
+            <li>пункт 4</li>
+            <li>пункт 5</li>
+            <li>пункт 6</li>
+            <li>пункт 7</li>
+            <li>пункт 8</li>    
+            <li>пункт 9</li>       
+		</ul>
+	</div>
+	<div>контент</div>
+	<div>колонка с каким-то контентом</div>
+	<footer>подвал с контентом</footer>
+</body>
+
+</html>

@@ -11,7 +11,8 @@ header{
     background-color:coral;
     position:relative;
     min-height:320px;
-    min-width:480px;      
+    min-width:480px;   
+  
 }
 header>div{
     position:absolute;
@@ -39,24 +40,24 @@ footer{
     line-height:120px;
 }
 
-main{
-    min-height:400px;
-    min-width:480px;
-}
+
 aside{
-    position:absolute;
+    padding: 20px 0;
     min-width:480px;
     background-color: hotpink;
+  
 }
 aside li,
 aside label{
     color:blue;
     text-decoration:underline;
     cursor:pointer;
+  
 }
 aside ul{
     list-style:none;
     padding-inline-start:0;
+  
 }
 aside input{
     display:none;
@@ -66,6 +67,7 @@ aside input{
 #roga~ul,
 #kopyta~ul{
       display:none;
+  
   }
 
 
@@ -73,6 +75,8 @@ aside input{
 #roga:checked~ul,
 #kopyta:checked~ul{
       display:block;
+  
+  
   }
   aside>ul>li>label:after{
     content:'\25bc';
@@ -83,6 +87,7 @@ aside input{
     }
 aside label{
     display:block;
+  
 }
 #roga~ul,
 #kopyta~ul,
@@ -93,9 +98,11 @@ aside label{
     position:absolute;
     top:35px;
     left:15px;
+  
 }
 aside>ul>li {
     position:relative;  
+  
 }
 
 /*измененный список*/
@@ -107,4 +114,6 @@ margin-bottom:70px;
 #kozha:checked~label{
 margin-bottom:105px;
       }
- 
+main{
+	min-height: 400px;
+}

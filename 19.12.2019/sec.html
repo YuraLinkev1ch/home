@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+@keyframes animateArrow {
+from {transform: rotate(0deg);}
+50%{transform: rotate(180deg);}
+to{transform: rotate(360deg);}
+}
+
+    .zero{
+        font-size:20px;
+        margin-left:95px;
+    }
+    .clock{
+        position:relative;
+    }
+    .circle{
+        position:absolute;
+        width:200px;
+        height:200px;
+        border-radius:100%;
+        border:1px solid black;
+    }
+    .arrow{
+        position:absolute;
+        width:2px;
+        height:80px;
+        background-color:black;
+        left:100px;
+        top:20px;
+        transform-origin: center bottom;
+        animation: animateArrow 60s linear infinite;
+    }
+
+
+
+    .numbers{
+        position:relative;
+        top:220px;
+        left:70px;
+        width:50px;
+        height: 20px;
+        border:1px solid red;
+        z-index:20;
+         overflow:hidden;
+    }
+@keyframes animateTen{
+from{bottom:-90px;}
+to{bottom:18px;}
+}
+@keyframes animateOne{
+from{bottom:-180px;}
+to{bottom:0px;}
+}
+
+    .left-part{
+        position:absolute;        
+        left:10px;
+         animation: animateTen 60s  steps(6)  infinite;
+    }
+    .right-part{
+        position:absolute;
+        right:10px;
+         animation: animateOne 10s  steps(10) infinite; 
+    }
+
+    </style>
+</head>
+<body>
+
+<div class="zero">0</div>
+<div class="clock">
+    <div class="circle"></div>
+    <div class="arrow"></div>
+</div>
+
+<div class="numbers">
+<div class="block">
+    <div class="left-part">
+        <div>0</div>
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+    </div>
+
+    <div class="right-part">
+        <div>0</div>
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>0</div>
+    </div>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+
+        .pencil{   
+        width:100%;
+        overflow:hidden;
+    }
+    .pencil-body{
+        width:90%;
+        height:105px;
+        background:linear-gradient(to top, #FFFF00,  #FFFF00 35px,  #CCCC00 35px,  #CCCC00 70px,  #FFFF00  70px,  #FFFF00  105px);
+    }
+    .pencil-head-1{
+        position:absolute;
+        left: calc(90% + 12px);
+        top:-52px;
+        height:230px;
+        width:10%;
+    }
+
+    .tip-1{
+      width: 0;
+      height: 0;
+      border-left: 75px solid transparent;
+      border-right: 75px solid transparent;
+      border-top: 100px solid #A52A2A;
+      border-radius: 50%;
+      transform: rotate(-90deg);
+    }
+
+    .pencil-head-2{
+        position:absolute;
+        left: calc(90% + 102px);
+        top:-50px;
+        height:230px;
+      
+    }
+
+    .tip-2{
+
+      width: 0;
+      height: 0;
+      border-left: 35px solid transparent;
+      border-right: 35px solid transparent;
+      border-top: 50px solid black;
+      border-radius: 50%;
+      transform: rotate(-90deg);  
+    }
+    
+    </style>
+</head>
+<body class="pencil">
+    <table class="pencil-body"> 
+        <tr>
+            <td ></td>
+        </tr>
+    </table>
+    <table class="pencil-head-1">
+        <tr>
+            <td class="tip-1"></td>
+        </tr>
+
+    </table>
+    <table class="pencil-head-2">
+        <tr>
+            <td class="tip-2"></td>
+        </tr>
+</body>
+</html>

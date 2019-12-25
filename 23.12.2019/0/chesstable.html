@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+	<style>
+table, tr, td{
+    border:1px solid black;
+}
+table{
+	width: 80vmin;
+	height: 80vmin;
+}
+td{
+	height:9vmin;
+	width:9vmin;
+	text-align:center;
+}
+tr:nth-child(1) td:not(:first-child):not(:last-child),
+tr:nth-child(10) td:not(:first-child):not(:last-child){
+    border-left:0px solid black;
+    border-right:0px solid black;
+}
+tr td:first-child,
+tr td:last-child{
+    border-top:0px solid black;
+    border-bottom: 0px solid black;
+}
+tr:first-child td:first-child,
+tr:first-child td:last-child{
+    border-top:1px solid black;
+}
+tr:last-child td:first-child,
+tr:last-child td:last-child{
+    border-bottom:1px solid black;
+}
+
+tr:nth-child(1) td:first-child,
+tr:last-child td:first-child{
+    border-right:0px solid black;
+}
+tr:nth-child(1) td:last-child,
+tr:last-child td:last-child{
+    border-left:0px solid black;
+}
+
+/* kletki */
+tr:nth-child(2n):not(:last-child) td:nth-child(2n):not(:last-child),
+tr:nth-child(2n-1):not(:first-child) td:nth-child(2n-1):not(:first-child){
+background-color:red;
+}
+/* добавить фигуры при наведении!!!! */
+.castle:hover{
+	background-image:url("images/chess.png");
+    background-size:750% 200%;
+    background-position-x:41%;
+}
+.horse:hover{
+	background-image:url("images/chess.png");
+    background-size:750% 200%;
+    background-position-x:82%;
+}
+.elephant:hover{
+	background-image:url("images/chess.png");
+    background-size:750% 200%;
+    background-position-x:61%;
+}
+.king:hover{
+	background-image:url("images/chess.png");
+    background-size:750% 200%;
+    background-position-x:0%;
+}
+.queen:hover{
+	background-image:url("images/chess.png");
+    background-size:750% 200%;
+    background-position-x:20%;	
+}
+.pawn:hover{
+	background-image:url("images/chess.png");
+    background-size:750% 200%;
+    background-position-x:102%;
+    background-repeat:no-repeat;
+}
+tr:nth-child(8) td,
+tr:nth-child(9) td{
+     background-position-y:100% ;  
+}
+
+
+	</style>
+</head>
+
+<body>
+	<table cellpadding="0" cellspacing="0">
+		<tr>
+			<td></td>
+			<td>a</td>
+			<td>b</td>
+			<td>c</td>
+			<td>d</td>
+			<td>e</td>
+			<td>f</td>
+			<td>g</td>
+			<td>h</td>
+			<td></td>
+		</tr>
+
+		<tr>
+			<td>1</td>
+			<td class="castle"></td>
+			<td class="horse"></td>
+			<td class="elephant"></td>
+			<td class="king"></td>
+			<td class="queen"></td>
+			<td class="elephant"></td>
+			<td class="horse"></td>
+			<td class="castle"></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>2</td>
+			<td class="pawn"></td>
+			<td class="pawn"></td>
+			<td class="pawn"></td>
+			<td class="pawn"></td>
+			<td class="pawn"></td>
+			<td class="pawn"></td>
+			<td class="pawn"></td>
+			<td class="pawn"></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>3</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>4</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>5</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>6</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>7</td>
+			<td class="pawn"></td>
+			<td class="pawn"></td>
+			<td class="pawn"></td>
+			<td class="pawn"></td>
+			<td class="pawn"></td>
+			<td class="pawn"></td>
+			<td class="pawn"></td>
+			<td class="pawn"></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>8</td>
+			<td class="castle"></td>
+			<td class="horse"></td>
+			<td class="elephant"></td>
+			<td class="queen"></td>
+			<td class="king"></td>
+			<td class="elephant"></td>
+			<td class="horse"></td>
+			<td class="castle"></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+	</table>
+</body>
+
+</html>

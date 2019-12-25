@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+	<style>
+		table,
+		th,
+		td {
+			border: 1px solid black;
+            background-color:#FFD;
+			/* border-collapse:collapse; */
+
+		}
+
+		thead {
+			color: green;
+		}
+
+		tbody>tr:nth-child(odd) td:first-child {
+			color: red;
+		}
+        tbody>tr:nth-child(even) td{
+			background-color: #DDD;
+		}
+        tbody>tr>td:hover,
+        th:hover{
+            background-color: #000;
+            color:#FFF !important;
+        }
+
+	</style>
+</head>
+
+<body>
+	<table cellspacing="0" cellpadding="20">
+		<thead>
+			<tr>
+				<th>#</th>
+				<th>Фамилия</th>
+				<th>Оценка</th>
+			</tr>
+		</thead>
+
+		<tbody>
+			<tr>
+				<td>1</td>
+				<td>Иванов</td>
+				<td>5</td>
+			</tr>
+			<tr>
+				<td>2</td>
+				<td>Петров</td>
+				<td>4</td>
+			</tr>
+			<tr>
+				<td>3</td>
+				<td>Сидоров</td>
+				<td>н</td>
+			</tr>
+			<tr>
+				<td>4</td>
+				<td>Абрамович</td>
+				<td>сколько надо</td>
+			</tr>
+		</tbody>
+	</table>
+</body>
+
+</html>

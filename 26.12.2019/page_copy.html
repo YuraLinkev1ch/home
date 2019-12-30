@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Сверстать макет </title>
+    <link rel="stylesheet" href="style.css">
+    <!--
+    Сверстать с помощью flexbox:
+    <640 - блоки в столбик, блоки 2, 10, 11, 12 - прячем, реклама(бл.7 закрывается), меню выпадающее и fixed
+    640...1024 - как на макете
+    1024...1200 - блоки 4 и 7 становятся горизонтально
+    > 1200 - максимальная ширина 1200px и центрирование по горизонтали
+    -->
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+        </header>
+        <hr>
+        <main>
+            <aside>
+                <div>4
+                    <input type="checkbox" id="menu">
+                    <label for="menu">Создание сайтов</label>
+                    <ul>
+                        <li>Изготовление сайта под ключ</li>
+                        <li>Как мы работаем</li>
+                    </ul>
+                </div>
+                <div>7</div>
+            </aside>
+            <article>
+                <div>5</div>
+                <ul>
+                    <li>6</li>
+                    <li>6</li>
+                    <li>6</li>
+                    <li>6</li>
+                    <li>6</li>
+                    <li>6</li>
+                    <li>6</li>
+                </ul>
+                <div>8</div>
+                <div>9</div>
+            </article>
+        </main>
+        <hr>
+        <footer>
+            <div>10</div>
+            <div>11</div>
+            <div>12</div>
+            <div>13</div>
+        </footer>
+    </div>
+</body>
+
+</html>

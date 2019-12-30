@@ -1,0 +1,293 @@
+/* page=wrapper*/
+
+body{
+    margin: 0;
+}
+input {
+    display: none;
+}
+
+
+.page div,
+.page__main__aside__services__list,
+.page__main__article__list{
+    background-color: grey;
+    list-style: none;
+}
+
+li {
+    background-color: rgb(128, 123, 123);
+    border: 1px solid black;
+}
+
+
+
+
+
+/*header,
+footer,
+aside,
+main {
+    background-color: #DDD;
+    outline: 1px solid red;
+}*/
+
+@media screen and (max-width:639px) {
+
+    .page__header__block-two,
+    .page__footer__block-10,
+    .page__footer__block-11,
+    .page__footer__block-12,
+    .page__main__aside__ad {
+        display: none;
+    }
+    .page__header,
+    .page__main,
+    .page__footer {
+        outline: 1px solid black;
+    }
+    .page div,
+    .page__main__aside__services__list,
+    .page__main__article__list,
+    li {
+        outline: 1px solid black;
+        padding: 10px;
+    }
+    #menu~ul {
+        display: none;
+    }
+    #menu:checked~ul {
+        display: block;
+    }
+    .page__main__aside__services {
+        position: fixed;
+        width: 100%;
+    }
+    .page__main__article {
+        padding-top: 40px;
+    }
+    .page__main__aside__services__list,
+    .page__main__article__list {
+        margin-left: -25px;
+    }
+    .page__main__article__list>li {
+        margin-left: 25px;
+    }
+}
+
+
+/*//////////////////////////////////////////////////////////*/
+
+@media screen and (min-width: 640px) {
+    .page {
+        width: 60%;
+        margin: 0 auto;
+    }
+    hr {
+        margin: 12.5px 0;
+    }
+    div {
+        margin: 12.5px 0;
+    }
+    .page__header {
+        display: flex;
+    
+    }
+    .page__header__block-two,
+    .page__header__contacts{
+        margin-left: 25px;
+    }
+    .page__header__logo {
+        height: 110px;
+        width: 120px;
+        background-color: grey;
+    }
+    .page__header__block-two {
+        height: 110px;
+        width: 250px;
+        background-color: grey;
+    }
+    .page__header__contacts {
+        height: 110px;
+        width: 510px;
+        background-color: grey;
+    }
+    /* ! main*/
+    .page__main {
+        min-height: 745px;
+        display: flex;
+    }
+    .page__main__aside {
+        min-height: 745px;
+        width: 21%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    .page__main__aside__ad {
+        margin-top: auto;
+        height: 130px;
+    }
+    .page__main__article {
+        display: flex;
+        flex-wrap: wrap;
+        width: 79%;
+        min-height: 725px;
+        padding-left: 25px;
+    }
+    .page__main__article__main-info {
+        width:100%;
+        height: 210px;
+    }
+    .page__main__article__list {
+        display: flex;
+        flex-wrap: wrap;
+        flex-basis: 725px;
+        min-height: 330px;
+        margin-left: -40px;
+    }
+    .page__main__article__list li {
+        min-height: 150px;
+        width: 110px;
+        margin-bottom: 25px;
+        margin-right: 3%;
+    }
+    .page__main__article__info-about-studio,
+    .page__main__article__info-about-promotion{
+        height: 200px;
+        width: 47%;
+        display: flex;
+        margin-top: -15px;
+    }
+    .page__main__article__info-about-promotion {
+        margin-left: auto;
+    }
+    .page__main__aside__services__list li {
+        margin-left: -40px;
+    }
+    .page__main__article__list {
+        background-color: white;
+    }
+    /* ! footer*/
+    .page__footer {
+        display: flex;
+        flex-direction: column;
+        height: 200px;
+        flex-wrap: wrap;
+    }
+    .page__footer__block-10,
+    .page__footer__block-11 {
+        height: 180px;
+        width: 29%;
+    }
+    .page__footer__block-12,
+    .page__footer__block-13 {
+        height: 75px;
+        width: 32%;
+        margin-left: auto;
+    }
+    .page__footer__block-11  {
+        margin-right: -30px;
+    }
+}
+
+
+/*////////////////////////////////////////////////*/
+
+@media screen and (min-width: 1024px) {
+    .page{
+        width: 60%;
+        margin: 0 auto;
+    }
+    hr {
+        margin: 12.5px 0;
+    }
+    div {
+        margin: 12.5px 0;
+    }
+    .page__header {
+        display: flex;
+    }
+    .page__header__block-two,
+    .page__header__contacts {
+        margin-left: 25px;
+    }
+    .page__header__logo {
+        height: 110px;
+        width: 120px;
+        background-color: grey;
+    }
+    .page__header__block-two {
+        height: 110px;
+        width: 250px;
+        background-color: grey;
+    }
+    .page__header__contacts {
+        height: 110px;
+        width: 510px;
+        background-color: grey;
+    }
+    /* ! main */
+    .page__main {
+        min-height: 745px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .page__main__aside {
+        min-height: 245px;
+        width: 100%;
+        display: flex;
+    }
+    .page__main__aside__ad {
+        height: 130px;
+        margin-top: 12.5px;
+    }
+    .page__main__article {
+        display: flex;
+        flex-basis: 100%;
+        margin-left: -25px;
+    }
+    .page__main__article__main-info {
+        display: flex;
+        flex-basis: 100%;
+    }
+    .page__main__article__list {
+        display: flex;
+        flex-wrap: wrap;
+        flex-basis: 100%;
+        min-height: 330px;
+    }
+    .page__main__article__list li {
+        min-height: 150px;
+        width: 110px;
+        margin-bottom: 25px;
+        margin-right: 3%;
+    }
+    .page__main__article__info-about-studio,
+    .page__main__article__info-about-promotion {
+        height: 200px;
+        width: 48%;
+        display: flex;
+    }
+    /* ! footer */
+    .page__footer {
+        display: flex;
+        flex-direction: column;
+        height: 200px;
+        flex-wrap: wrap;
+    }
+    .page__footer__block-10,
+    .page__footer__block-11 {
+        height: 180px;
+        width: 29%;
+    }
+    .page__footer__block-12,
+    .page__footer__block-13 {
+        height: 75px;
+        width: 32%;
+        margin-left: auto;
+    }
+    .page__footer__block-11  {
+        margin-right: -30px;
+    }
+}

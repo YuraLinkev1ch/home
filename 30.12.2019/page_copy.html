@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>(BEM) Сверстать макет </title>
+    <link rel="stylesheet" href="style.css">
+    <!--
+    Сверстать с помощью flexbox:
+    <640 - блоки в столбик, блоки 2, 10, 11, 12 - прячем, реклама(бл.7 закрывается), меню выпадающее и fixed
+    640...1024 - как на макете
+    1024...1200 - блоки 4 и 7 становятся горизонтально
+    > 1200 - максимальная ширина 1200px и центрирование по горизонтали
+    -->
+</head>
+
+<body>
+    <div class="page">
+        <header class="page__header">
+            <div class="page__header__logo">1</div>
+            <div class="page__header__block-two">2</div>
+            <div class="page__header__contacts">3</div>
+        </header>
+        <hr>
+        <main class="page__main">
+            <aside class="page__main__aside">
+                <div class="page__main__aside__services">4
+                    <input type="checkbox" id="menu">
+                    <label for="menu">Создание сайтов</label>
+                    <ul class="page__main__aside__services__list">
+                        <li>Изготовление сайта под ключ</li>
+                        <li>Как мы работаем</li>
+                    </ul>
+                </div>
+                <div class="page__main__aside__ad">7</div>
+            </aside>
+            <article class="page__main__article">
+                <div class="page__main__article__main-info">5</div>
+                <ul class="page__main__article__list">
+                    <li>6</li>
+                    <li>6</li>
+                    <li>6</li>
+                    <li>6</li>
+                    <li>6</li>
+                    <li>6</li>
+                    <li>6</li>
+                </ul>
+                <div class="page__main__article__info-about-studio">8</div>
+                <div class="page__main__article__info-about-promotion">9</div>
+            </article>
+        </main>
+        <hr>
+        <footer class="page__footer">
+            <div class="page__footer__block-10">10</div>
+            <div class="page__footer__block-11">11</div>
+            <div class="page__footer__block-12">12</div>
+            <div class="page__footer__block-13">13</div>
+        </footer>
+    </div>
+</body>
+
+</html>

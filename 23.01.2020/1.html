@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Палиндром</title>
+</head>
+<body>
+    <script>
+    var str = prompt("Введите строку");
+
+str = str.split(",").join("")
+	 .split("!").join("")
+   .split("?").join("")
+   .split(".").join("")
+   .split(":").join("")
+   .split("-").join("")
+   .split(";").join("")
+   .split(" ").join("")
+   .split("_").join("")
+   .split("-").join("")
+   .split("=").join("")
+   .split("%").join("")
+   .split("#").join("")
+   .split("@").join("")
+   .split("*").join("")
+   .split("(").join("")
+   .split(")").join("")
+   .split("[").join("")
+   .split("[").join("")
+   .split("{").join("")
+   .split("}").join("")
+   .split("<").join("")
+   .split(">").join("")
+   .split("\"").join("")
+   .split("'").join("");
+   
+str = str.toLowerCase().split("");
+if (str.join("") === str.reverse().join("")) {
+	alert("Палиндром!");
+} else {
+	alert("И не разу и не палиндром!")
+}
+    </script>
+</body>
+</html>
